@@ -1,0 +1,122 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color:hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+.hero-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.image-section{
+    position: relative;
+}
+
+.image-section span{
+    position:absolute;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 280pxf;
+    transition: background-color 0.25s ease;
+}
+
+.hero-section span:hover{
+    background: transparent url(./images/icon-view.svg) no-repeat;
+    background-position: center;
+    background-color: hsla(178, 100%, 50%, 0.4);
+}
+
+.container{
+    width: 320px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 20px;
+    border-radius: 15px;
+    position:absolute;
+}
+
+.hero-img{
+    width: 280px;
+    border-radius: 15px;
+
+}
+h1{
+    margin-bottom: 10px;
+    color: hsl(0,0%,100%);
+}
+p{
+    letter-spacing: 0.047em;
+    line-height: 1.6;
+    color: hsl(215, 51%, 70%);
+}
+.stats{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+span{
+    margin-right: 6px;
+}
+.logo-text{
+    color: aqua;
+    font-weight: 600;
+}
+span img{
+    margin-bottom: -2px;
+}
+
+.avatar-section{
+    padding-top: 22px;
+    border-top: 1px solid hsl(215, 51%, 70%);
+    font-size: 0.88rem;
+    margin-bottom: 6px;
+}
+.avtar-img{
+    width: 34px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-bottom: -11.2px;
+    margin-right: 10px;
+}
+strong{
+    color: #fff;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    color: #fff;
+ }
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
